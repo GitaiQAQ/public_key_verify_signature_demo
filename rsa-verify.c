@@ -2,7 +2,7 @@
  * @Author: Gitai<i@gitai.me>
  * @Date: 2020-06-26 18:07:59
  * @LastEditors: Gitai
- * @LastEditTime: 2020-06-28 00:00:32
+ * @LastEditTime: 2020-06-28 10:09:15
  * @FilePath: /src/rsa/rsa-verify.c
  */
 /*
@@ -65,7 +65,7 @@ int int_module(void)
     printk(KERN_INFO "Hello rsa-verify\n");
     void *sig = kmalloc(sizeof(hello_sig), GFP_KERNEL);
     memcpy(sig, hello_sig, sizeof(hello_sig));
-    return rsa_verify(hello_sha1, sizeof(hello_sha1), sig, sizeof(hello_sig));
+    return rsa_verify(hello_sha256, sizeof(hello_sha256), sig, sizeof(hello_sig));
 }
 
 void clanup_module(void)

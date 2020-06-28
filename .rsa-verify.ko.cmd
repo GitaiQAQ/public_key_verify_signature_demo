@@ -1,1 +1,0 @@
-cmd_/home/gitai/hook/src/rsa/rsa-verify.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -T ./scripts/module-common.lds  --build-id  -o /home/gitai/hook/src/rsa/rsa-verify.ko /home/gitai/hook/src/rsa/rsa-verify.o /home/gitai/hook/src/rsa/rsa-verify.mod.o ;  true
